@@ -5,21 +5,8 @@ A smart AI newsroom system powered by **Microsoft AutoGen** and local AI (**Olla
 ---
 
 ## 📌 How the Team Works (Workflow Diagram)
+<img width="560" height="637" alt="image" src="https://github.com/user-attachments/assets/6fedb5d7-6275-46a2-8dbf-dd77c4bc6107" />
 
-```mermaid
-flowchart TD
-    subgraph Team1 [Step 1: Gather Facts]
-        A[Reporter Agent] -->|1. Requests Facts| B[UserProxy Agent]
-        B -->|2. Runs Python Tool| A
-    end
-
-    subgraph Team2 [Step 2: Write and Review]
-        C[Writer Agent] -->|3. Sends Draft| D[Critic Agent]
-        D -->|Revisions Needed| C
-        D -->|4. Approve| E[Published Newsletter]
-    end
-
-    Team1 -->|Passes News Data| Team2
 
 
 ## 🤖 Meet the AI Agents
