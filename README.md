@@ -21,7 +21,7 @@ A smart AI newsroom system powered by **Microsoft AutoGen** and local AI (**Olla
 ---
 
 ## 📂 Repository File Breakdown
-autogen-multiagent-newsroom/ ├── capstone_newsroom.py # Main program file containing all AI agents & workflow rules ├── run_log.txt # Live text record showing a real test run on the topic "rainbow" └── README.md # Project documentation
+
 
 
 ### Simple Explanation of the Files:
