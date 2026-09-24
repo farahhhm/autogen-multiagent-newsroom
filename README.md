@@ -8,18 +8,19 @@ A smart AI newsroom system powered by **Microsoft AutoGen** and local AI (**Olla
 
 ```mermaid
 flowchart TD
-    subgraph Team1["Step 1: Gather Facts (Reporter Team)"]
-        A["🔍 Reporter Agent"] -->|"1. Requests News Facts"| B["⚙️ UserProxy Agent"]
-        B -->|"2. Executes Python Tool & Returns Data"| A
+    subgraph Team1 [Step 1: Gather Facts]
+        A[Reporter Agent] -->|1. Requests Facts| B[UserProxy Agent]
+        B -->|2. Runs Python Tool| A
     end
 
-    Team1 -->|"3. Passes Collected Facts"| Team2
-
-    subgraph Team2["Step 2: Write & Review (Editorial Team)"]
-        C["✍️ Writer Agent"] -->|"4. Sends Newsletter Draft"| D["🧐 Critic Agent"]
-        D -->|"Revisions Needed"| C
-        D -->|"5. APPROVE"| E["✅ Published Newsletter"]
+    subgraph Team2 [Step 2: Write and Review]
+        C[Writer Agent] -->|3. Sends Draft| D[Critic Agent]
+        D -->|Revisions Needed| C
+        D -->|4. Approve| E[Published Newsletter]
     end
+
+    Team1 -->|Passes News Data| Team2
+
 
 ## 🤖 Meet the AI Agents
 
